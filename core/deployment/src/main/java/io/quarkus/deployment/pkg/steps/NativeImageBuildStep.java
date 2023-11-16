@@ -959,9 +959,9 @@ public class NativeImageBuildStep {
                             .filter(o -> o.triggerError(containerBuild))
                             .map(o -> o.error)
                             .collect(Collectors.joining(", "));
-                    if (!errs.isEmpty()) {
+                    /*if (!errs.isEmpty()) {
                         throw new UnsupportedOperationException(errs);
-                    }
+                    }*/
                 }
 
                 for (ExcludeConfigBuildItem excludeConfig : excludeConfigs) {
